@@ -105,3 +105,78 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+/*==================== Notify 1 ====================*/
+
+    var notify = document.querySelector('.notification');
+    var btn = document.querySelector('.cont1');
+    btn.addEventListener('click', active);
+
+    function active(){
+        var add = Number(notify.getAttribute('data-count'))|| 0;
+        notify.setAttribute('data-count', add + 1);
+        if (add === 0) {
+            notify.classList.add('add-numb');
+        }
+        false;
+    }
+/*==================== Notify 2 ====================*/
+
+    var notify = document.querySelector('.notification');
+    var btn = document.querySelector('.cont2');
+    btn.addEventListener('click', active);
+
+    function active(){
+        var add = Number(notify.getAttribute('data-count'))|| 0;
+        notify.setAttribute('data-count', add + 1);
+        if (add === 0) {
+            notify.classList.add('add-numb');
+        }
+        false;
+    }
+/*==================== Notify 3 ====================*/
+
+    var notify = document.querySelector('.notification');
+    var btn = document.querySelector('.cont3');
+    btn.addEventListener('click', active);
+
+    function active(){
+        var add = Number(notify.getAttribute('data-count'))|| 0;
+        notify.setAttribute('data-count', add + 1);
+        if (add === 0) {
+            notify.classList.add('add-numb');
+        }
+        false;
+    }
+/*==================== Notify 4 ====================*/
+
+    var notify = document.querySelector('.notification');
+    var btn = document.querySelector('.cont4');
+    btn.addEventListener('click', active);
+
+    function active(){
+        var add = Number(notify.getAttribute('data-count'))|| 0;
+        notify.setAttribute('data-count', add + 1);
+        if (add === 0) {
+            notify.classList.add('add-numb');
+        }
+        false;
+    }
+
+/*==================== Notify Menu ====================*/
+
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = '510px';
+		box.style.opacity = 1;
+		down = true;
+	}
+}

@@ -152,6 +152,79 @@ img{
   background-color: var(--body-color);
 }
 
+/*========== NOTIFY ==========*/
+
+.notification:hover {
+  background: red;
+}
+
+.notification::before {
+	content: attr(data-count);
+  position: absolute;
+  top: 15px;
+  right: 95px;
+  width: 15px;
+  height: 15px;
+  font-size: 0.6rem;
+  opacity: 0;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.notification.add-numb::before{
+  opacity: 1;
+  text-align: center;
+}
+
+.notifi-box {
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+	position: absolute;
+	top: 85px;
+	right: 35px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notifi-box h2 {
+	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #999;
+}
+.notifi-box h2 span {
+	color: #f00;
+}
+.notifi-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 14px 5px;
+/* padding: base 2px / normal 15 / now 14 ;*/
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.notifi-item:hover {
+	background-color: #eee;
+}
+.notifi-item img {
+	display: block;
+	width: 50px;
+  height: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.notifi-item .text h4 {
+	color: #777;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.notifi-item .text p {
+	color: #aaa;
+	font-size: 12px;
+}
+
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
