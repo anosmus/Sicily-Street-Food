@@ -559,6 +559,54 @@ img{
   .special {
     display: block;
   }
+
+  .bx bx-cart {
+    margin-right: 45px;
+  }
+
+  .notifi-box {
+    margin-right: 19px;
+  }
+}
+
+@media screen and (min-width: 425px){
+  .home__container,
+  .about__container,
+  .app__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .about__data, .about__initial,
+  .app__data, .app__initial,
+  .contact__container, .contact__initial{
+    text-align: initial;
+  }
+
+  .about__img, .app__img{
+    width: 380px;
+    order: -1;
+  }
+
+  .contact__container{
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+  .contact__button{
+    justify-self: center;
+  }
+
+  .special {
+    display: block;
+  }
+
+  .change-theme {
+    margin-right: 45px;
+  }
+
+  .notifi-box {
+    margin-right: 19px;
+  }
 }
 
 @media screen and (min-width: 768px){

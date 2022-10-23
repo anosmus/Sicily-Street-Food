@@ -177,6 +177,7 @@ function toggleNotifi(){
 	}else {
 		box.style.height  = '510px';
 		box.style.opacity = 1;
+		box.style.background = 'white';
 		down = true;
 	}
 }
